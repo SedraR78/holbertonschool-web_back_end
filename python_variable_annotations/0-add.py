@@ -1,15 +1,9 @@
 #!/usr/bin/env python3
-"""
-Module 0-add
+"""Module that provides a function to sum two floats.
 """
 
 
 def add(a: float, b: float) -> float:
-    """
-    Sum two floats.
-
-    Args:
-        a (float): The first float to add.
-        b (float): The second float to add.
+    """Returns the sum of two float numbers.
     """
     return a + b

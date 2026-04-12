@@ -1,0 +1,3 @@
+// script that lists all document.
+db.school.find().forEach(printjson);
+

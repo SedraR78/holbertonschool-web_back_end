@@ -1,17 +1,9 @@
 #!/usr/bin/env python3
-"""
-Module 2-floor
+"""This module define a function to floor a float numbers.
 """
 
 
 def floor(n: float) -> int:
-    """
-    Returns the floor of a float as an integer.
-
-    Args:
-        n (float): The float number to be floored
-
-    Return:
-        int: The floor of the float n
+    """Returns the floor of a float as an int.
     """
     return int(n)

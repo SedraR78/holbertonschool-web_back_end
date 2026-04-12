@@ -1,18 +1,9 @@
 #!/usr/bin/env python3
-"""
-Module 5-sum_list
+"""Modules that define function which takes a list of floats as argument.
 """
 from typing import List
 
 
 def sum_list(input_list: List[float]) -> float:
-    """
-    Sum a list of floats.
-
-    Args:
-        input_list (List[float]): The list of floats to sum.
-
-    Returns:
-        float: The sum of the floats in the list.
-    """
+    """Return the sum of as a float."""
     return sum(input_list)

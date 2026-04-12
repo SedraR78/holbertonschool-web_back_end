@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
+"""Modules that define and annotate variables with the specified values.
 """
-Module 4-define_variables
-"""
-
 
 a: int = 1
 pi: float = 3.14
