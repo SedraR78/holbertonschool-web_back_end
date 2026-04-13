@@ -1,3 +1,0 @@
-Building { _sqft: 100 }
-Error: Class extending Building must override evacuationWarningMessage
-    ...
