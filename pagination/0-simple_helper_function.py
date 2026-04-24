@@ -2,13 +2,12 @@
 """
 Simple helper function
 """
-from typing import Tuple
 
 
-def index_range(page: int, page_size: int) -> Tuple[int, int]:
+def index_range(page: int, page_size: int) -> tuple:
     """
-    Retourne (start, end) pour la pagination.
+    Return start and end index for pagination.
     """
     start = (page - 1) * page_size
-    end = start + page_size
-    return (start, end)
+    end = page * page_size
+    return start, end
