@@ -1,0 +1,2 @@
+// MongoDB: Deletes document in a collection.
+db.school.deleteMany({name: "Holberton school"})
