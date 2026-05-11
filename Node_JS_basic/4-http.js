@@ -1,4 +1,4 @@
-const http = require('http');
+/* const http = require('http');
 
 const app = http.createServer((_request, response) => {
   // this callback runs for EVERY incoming request
@@ -6,6 +6,17 @@ const app = http.createServer((_request, response) => {
   response.setHeader('Content-Type', 'text/plain');
   response.write('Hello Holberton School!');
   response.end(); // MUST call this to finish the response
+});
+
+app.listen(1245);
+
+module.exports = app;
+ */
+
+const http = require('http');
+
+const app = http.createServer((_req, res) => {
+  res.end('Hello Holberton School!');
 });
 
 app.listen(1245);
