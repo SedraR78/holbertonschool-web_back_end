@@ -25,7 +25,7 @@ function countStudents(path) {
 
     // 6. Trier les noms de champs alphabétiquement
     const fields = Object.keys(byField).sort(); // tableau des clés ['CS','SWE'] trié
-    
+
     // 7. Pour chaque champ trié, console.log le format demandé
     fields.forEach((field) => {
       const names = byField[field]; // tableau des prénoms du champ
