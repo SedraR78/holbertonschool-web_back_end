@@ -38,7 +38,7 @@ const app = http.createServer((req, res) => {
       // 4.6. For each sorted field, send the required format
       fields.forEach((field) => {
         const names = byField[field];
-        res.write(`Number of students in ${field}: ${names.length}. List: ${names.join(', ')}\n`);
+        res.write(`Number of students in ${field}: ${names.length}. List: ${names.join(', ')}`);
       });
       // 4.7. end the response (replaces resolve())
       res.end();
