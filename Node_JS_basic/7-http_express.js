@@ -12,7 +12,7 @@ app.get('/students', (_req, res) => {
     fs.readFile(DATABASE, 'utf8', (err, data) => {
         if (err) {
         output += 'Cannot load the database'; 
-        res.send('output');
+        res.send(output);
         return; 
       }
       const lines = data.split('\n').filter((line) => line.trim() !== '');
