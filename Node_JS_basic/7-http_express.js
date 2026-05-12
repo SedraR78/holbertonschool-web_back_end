@@ -8,6 +8,7 @@ app.get('/',(_req, res) => {
     res.send('Hello Holberton School!');
 });
 app.get('/students', (_req, res) => {
+    res.setHeader('Content-Type', 'text/plain');
     let output = 'This is the list of our students\n' ;
     fs.readFile(DATABASE, 'utf8', (err, data) => {
         if (err) {
