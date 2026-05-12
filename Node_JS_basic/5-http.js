@@ -23,7 +23,7 @@ const app = http.createServer((req, res) => {
       // 4.2. Separate the header from the rest with slice(1)
       const students = lines.slice(1);
       // 4.3. send the total number of students
-      res.write(`Number of students: ${students.length}\n`);
+      res.write(`Number of students: ${students.length}`);
       // 4.4. Group firstnames by field in an object { CS: [...], SWE: [...] }
       const byField = {};
       students.forEach((line) => {
@@ -38,7 +38,7 @@ const app = http.createServer((req, res) => {
       // 4.6. For each sorted field, send the required format
       fields.forEach((field) => {
         const names = byField[field];
-        res.write(`\n<Number of students in ${field}: ${names.length}. List: ${names.join(', ')}`);
+        res.write(`\nNumber of students in ${field}: ${names.length}. List: ${names.join(', ')}`);
       });
       // 4.7. end the response (replaces resolve())
       res.end();
