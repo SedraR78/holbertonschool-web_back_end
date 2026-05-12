@@ -3,13 +3,15 @@ const fs = require('fs');
 const DATABASE = process.argv[2]; // récupérer la database depuis la CLI
 
 const app = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+
   // routing
   if (req.url === '/') {
     res.end('Hello Holberton School!');
   } else if (req.url === '/students') {
     // 1. envoyer la 1ère ligne "This is the list of our students"
     res.write('This is the list of our students\n');
-
     // 2. Read the file ASYNCHRONOUSLY with fs.readFile (callback err, data)
     fs.readFile(DATABASE, 'utf8', (err, data) => {
       // 3. If read error → send error message in the response
